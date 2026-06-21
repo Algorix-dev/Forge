@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --forge-black:     #0D0D0B;
+  --forge-surface:   #141410;
+  --forge-card:      #1C1C17;
+  --forge-border:    #2A2A22;
+  --forge-subtle:    #3A3A2E;
+  --forge-muted:     #7A7A6A;
+  --forge-white:     #F5F0E8;
+  --forge-ember:     #C8602A;
+  --forge-ember-dim: #7A3318;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-mono:    'DM Mono', 'Courier New', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; background: var(--forge-black); }
+
+body {
+  background: var(--forge-black);
+  color: var(--forge-white);
+  font-family: var(--font-body);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--forge-black); }
+::-webkit-scrollbar-thumb { background: var(--forge-border); border-radius: 2px; }
+::selection { background: var(--forge-ember); color: var(--forge-white); }
+:focus-visible { outline: 1px solid var(--forge-ember); outline-offset: 2px; }
